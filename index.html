@@ -95,6 +95,7 @@
                 lop_stop()
               </script>
             </td>
+
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a>
                 <papertitle>Maintaining Plasticity in Continual Deep Learning</papertitle>
@@ -117,7 +118,7 @@
               <a href="https://shibhansh.github.io/data/plasticity.pdf">Slides</a>
               <p></p>
               <p>
-                  Provide first demonstration of the catastrophic loss of plasticity faced by deep learning methods in continual learning problems.
+                  Provide first direct demonstration of the catastrophic loss of plasticity faced by deep learning methods in continual learning problems.
               </p>
               <p>
                   We propose a new algorithm, <em>continual backpropagation</em>, that fully maintains plasticity.
@@ -126,6 +127,50 @@
 
             </td>
           </tr>
+
+                    <tr onmouseout="gamma_stop()" onmouseover="gamma_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='anf_image'>
+                  <img src='images/noisy_env.png' width="200"></div>
+                <img src='images/noisy_env.png' width="200">
+              </div>
+              <script type="text/javascript">
+                function gamma_start() {
+                  document.getElementById('anf_image').style.opacity = "1";
+                }
+
+                function gamma_stop() {
+                  document.getElementById('anf_image').style.opacity = "0";
+                }
+                gamma_stop()
+              </script>
+            </td>
+                      <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle>Automatic Noise Filtering with Dynamic Sparse Training in Deep Reinforcement Learning</papertitle>
+              </a>
+              <br>
+                          <a href="https://www.bramgrooten.nl/">Bram Grooten</a>,
+                          <a href="https://research.tue.nl/en/persons/ghada-sokar">Ghada Sokar</a>,
+                          <strong>Shibhansh Dohare</strong>,
+                          <a href="https://people.utwente.nl/e.mocanu">Elena Mocanu</a>,
+                          <a href="https://drmatttaylor.net/">Matthew E. Taylor</a>,
+                          <a href="https://www.tue.nl/en/research/researchers/mykola-pechenizkiy/">Mykola Pechenizkiy</a>,
+                          <a href="https://people.utwente.nl/d.c.mocanu">Decebal Constantin Mocanu</a>,
+              <br>
+              <em>AAMAS 2023</em>
+              <br>
+              <a href="https://arxiv.org/abs/2302.06548">Paper</a>
+              <p></p>
+              <p>
+                  We show that standard Deep RL algorithms fail when the input contains noisy features.
+                  Dynamic sparse training successfully filters through the noisy features and performs well.
+              </p>
+            </td>
+          </tr>
+
+
 
           <tr onmouseout="gamma_stop()" onmouseover="gamma_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
