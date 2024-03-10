@@ -48,21 +48,33 @@
             <td style="padding:20px;width:10%;vertical-align:middle">
               <heading>News</heading>
             <tr>
-              <td>&emsp;&emsp;&emsp;&emsp; [Oct, 2022]</td>
-              <td>&emsp;&emsp;&emsp;&emsp; Released a <a href="https://github.com/shibhansh/loss-of-plasticity">repo</a> containing supervised learning problems where we can study loss of plasticity.</td>
+              <td>&emsp;&emsp;&emsp;&emsp; [Sept 2023]</td>
+              <td>&emsp;&emsp;&emsp;&emsp; We published a <a href="https://openreview.net/forum?id=m9Jfdz4ymO">paper</a> on <em>policy collapse</em> in EWLR 2023.
             </tr>
             <tr> <td> </td> <td> </td> </tr>
             <tr> <td> </td> <td> </td> </tr>
             <tr>
-              <td>&emsp;&emsp;&emsp;&emsp; [Aug, 2022]</td>
+              <td>&emsp;&emsp;&emsp;&emsp; [Aug 2023]</td>
+              <td>&emsp;&emsp;&emsp;&emsp; Our <a href="https://arxiv.org/abs/2306.13812">paper</a>, <em>Loss of Plasticity in Deep Continual Learning</em>, is finally available on arxiv.
+            </tr>
+            <tr> <td> </td> <td> </td> </tr>
+            <tr> <td> </td> <td> </td> </tr>
+<!--            <tr>-->
+<!--              <td>&emsp;&emsp;&emsp;&emsp; [Oct 2022]</td>-->
+<!--              <td>&emsp;&emsp;&emsp;&emsp; Released a <a href="https://github.com/shibhansh/loss-of-plasticity">repo</a> containing supervised learning problems where we can study loss of plasticity.</td>-->
+<!--            </tr>-->
+<!--            <tr> <td> </td> <td> </td> </tr>-->
+<!--            <tr> <td> </td> <td> </td> </tr>-->
+            <tr>
+              <td>&emsp;&emsp;&emsp;&emsp; [Aug 2022]</td>
               <td>&emsp;&emsp;&emsp;&emsp; I shared a <a href="https://www.youtube.com/watch?v=p_zknyfV9fY">keynote</a> keynote at <a href="https://lifelong-ml.cc/">CoLLAs</a> with Rich on <em>Maintaining Plasticity in Deep Continual Learning</em>.</td>
             </tr>
-            <tr> <td> </td> <td> </td> </tr>
-            <tr> <td> </td> <td> </td> </tr>
-            <tr>
-              <td>&emsp;&emsp;&emsp;&emsp; [Apr, 2022]</td>
-              <td>&emsp;&emsp;&emsp;&emsp; I presented our <a href="https://arxiv.org/abs/2108.06325v3">paper</a>, <em>Continual Backprop: Stochastic Gradient Descent with Persistent Randomness</em>, at <a href="https://rldm.org/">RLDM</a>.</td>
-            </tr>
+<!--            <tr> <td> </td> <td> </td> </tr>-->
+<!--            <tr> <td> </td> <td> </td> </tr>-->
+<!--            <tr>-->
+<!--              <td>&emsp;&emsp;&emsp;&emsp; [Apr 2022]</td>-->
+<!--              <td>&emsp;&emsp;&emsp;&emsp; I presented our <a href="https://arxiv.org/abs/2108.06325v3">paper</a>, <em>Continual Backprop: Stochastic Gradient Descent with Persistent Randomness</em>, at <a href="https://rldm.org/">RLDM</a>.</td>-->
+<!--            </tr>-->
          </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -78,6 +90,41 @@
         </table>
 
         <table style="width:120%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="pc_stop()" onmouseover="pc_start()">
+            <td style="padding:0px;width:25%;vertical-align:top">
+              <div class="one">
+                <img src='images/pc.png' width="240">
+              </div>
+              <script type="text/javascript">
+                function pc_start() {
+                  document.getElementById('pc_image').style.opacity = "1";
+                }
+
+                function pc_stop() {
+                  document.getElementById('pc_image').style.opacity = "0";
+                }
+                pc_stop()
+              </script>
+            </td>
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle>Overcoming Policy Collapse in Deep Reinforcement Learning</papertitle>
+              </a>
+              <br>
+                <strong>Shibhansh Dohare</strong>,
+              <a href="https://lancelqf.github.io/about/">Qingfeng Lan</a>,
+              <a href="https://armahmood.github.io/">A. Rupam Mahmood</a>
+              <br>
+              <em>EWRL 2023</em>
+              <br>
+              <a href="https://openreview.net/forum?id=m9Jfdz4ymO">Paper</a>
+              <p></p>
+              <p>
+We show that popular deep RL algorithms, like PPO, do not scale with experience. Their performance gets worse over time. We look deeper into this problem and provide simple solutions to reduce performance degradation.              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="lop_stop()" onmouseover="lop_start()"  bgcolor="#ffffd0">
             <td style="padding:0px;width:25%;vertical-align:top">
@@ -128,7 +175,7 @@
             </td>
           </tr>
 
-                    <tr onmouseout="gamma_stop()" onmouseover="gamma_start()">
+          <tr onmouseout="gamma_stop()" onmouseover="gamma_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='anf_image'>
@@ -169,8 +216,6 @@
               </p>
             </td>
           </tr>
-
-
 
           <tr onmouseout="gamma_stop()" onmouseover="gamma_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
