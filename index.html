@@ -48,16 +48,22 @@
             <td style="padding:20px;width:10%;vertical-align:middle">
               <heading>News</heading>
             <tr>
-              <td>&emsp;&emsp;&emsp;&emsp; [Sept 2023]</td>
-              <td>&emsp;&emsp;&emsp;&emsp; We published a <a href="https://openreview.net/forum?id=m9Jfdz4ymO">paper</a> on <em>policy collapse</em> in EWLR 2023.
+              <td>&emsp;&emsp;&emsp;&emsp; [Aug 2024]</td>
+              <td>&emsp;&emsp;&emsp;&emsp; Our paper on <a href="https://www.nature.com/articles/s41586-024-07711-7">Loss of plasticity in deep continual learning</a> is now published in <em>Nature</em>.
             </tr>
             <tr> <td> </td> <td> </td> </tr>
             <tr> <td> </td> <td> </td> </tr>
             <tr>
-              <td>&emsp;&emsp;&emsp;&emsp; [Aug 2023]</td>
-              <td>&emsp;&emsp;&emsp;&emsp; Our <a href="https://arxiv.org/abs/2306.13812">paper</a>, <em>Loss of Plasticity in Deep Continual Learning</em>, is finally available on arxiv.
+              <td>&emsp;&emsp;&emsp;&emsp; [Sept 2023]</td>
+              <td>&emsp;&emsp;&emsp;&emsp; We published a <a href="https://openreview.net/forum?id=m9Jfdz4ymO">paper</a> on <em>policy collapse</em> in EWLR 2023.
             </tr>
             <tr> <td> </td> <td> </td> </tr>
+<!--            <tr> <td> </td> <td> </td> </tr>-->
+<!--            <tr>-->
+<!--              <td>&emsp;&emsp;&emsp;&emsp; [Aug 2023]</td>-->
+<!--              <td>&emsp;&emsp;&emsp;&emsp; Our <a href="https://arxiv.org/abs/2306.13812">paper</a>, <em>Loss of Plasticity in Deep Continual Learning</em>, is finally available on arxiv.-->
+<!--            </tr>-->
+<!--            <tr> <td> </td> <td> </td> </tr>-->
             <tr> <td> </td> <td> </td> </tr>
 <!--            <tr>-->
 <!--              <td>&emsp;&emsp;&emsp;&emsp; [Oct 2022]</td>-->
@@ -91,6 +97,55 @@
 
         <table style="width:120%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="lop_stop()" onmouseover="lop_start()"  bgcolor="#ffffd0">
+            <td style="padding:0px;width:25%;vertical-align:top">
+              <div class="one">
+                <img src='images/lop.png' width="250">
+              </div>
+              <script type="text/javascript">
+                function lop_start() {
+                  document.getElementById('lop_image').style.opacity = "1";
+                }
+
+                function lop_stop() {
+                  document.getElementById('lop_image').style.opacity = "0";
+                }
+                lop_stop()
+              </script>
+            </td>
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle>Loss of Plasticity in Deep Continual Learning</papertitle>
+              </a>
+              <br>
+                <strong>Shibhansh Dohare</strong>,
+              <a href="https://scholar.google.ca/citations?user=vD3XXGwAAAAJ&hl=en">J Fernando Hernandez-Garcia</a>,
+              <a>Parash Rahman</a>,
+              <a href="http://incompleteideas.net/">Richard S. Sutton</a>,
+              <a href="https://armahmood.github.io/">A. Rupam Mahmood</a>
+              <br>
+              <em>Nature</em> August 2024
+              <br>
+              <a href="https://www.nature.com/articles/s41586-024-07711-7">Paper</a>
+		|
+              <a href="https://github.com/shibhansh/loss-of-plasticity">Code</a>
+                |
+              <a href="https://www.youtube.com/watch?v=Zp_a9M309k4">Nature Podcast</a>
+                |
+              <a href="https://www.nature.com/articles/d41586-024-02525-z">News</a>
+              <p></p>
+              <p>
+                  Provide the first direct demonstration of the loss of plasticity faced by deep learning methods in continual learning problems.
+              </p>
+              <p>
+                  We propose a new algorithm, <em>continual backpropagation</em>, that fully maintains plasticity.
+                  Continual backpropagation re-initializes a small fraction of less-used units and performs a gradient descent step at each update.
+              </p>
+
+            </td>
+          </tr>
+
           <tr onmouseout="pc_stop()" onmouseover="pc_start()">
             <td style="padding:0px;width:25%;vertical-align:top">
               <div class="one">
@@ -123,55 +178,6 @@
               <p></p>
               <p>
 We show that popular deep RL algorithms, like PPO, do not scale with experience. Their performance gets worse over time. We look deeper into this problem and provide simple solutions to reduce performance degradation.              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="lop_stop()" onmouseover="lop_start()"  bgcolor="#ffffd0">
-            <td style="padding:0px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/lop.png' width="250">
-              </div>
-              <script type="text/javascript">
-                function lop_start() {
-                  document.getElementById('lop_image').style.opacity = "1";
-                }
-
-                function lop_stop() {
-                  document.getElementById('lop_image').style.opacity = "0";
-                }
-                lop_stop()
-              </script>
-            </td>
-
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a>
-                <papertitle>Loss of Plasticity in Deep Continual Learning</papertitle>
-              </a>
-              <br>
-                <strong>Shibhansh Dohare</strong>,
-              <a href="https://scholar.google.ca/citations?user=vD3XXGwAAAAJ&hl=en">J Fernando Hernandez-Garcia</a>,
-              <a>Parash Rahman</a>,
-              <a href="http://incompleteideas.net/">Richard S. Sutton</a>,
-              <a href="https://armahmood.github.io/">A. Rupam Mahmood</a>
-              <br>
-              <em>Preprint</em>
-              <br>
-              <a href="https://arxiv.org/abs/2306.13812">Paper</a>
-		|
-              <a href="https://github.com/shibhansh/loss-of-plasticity">Code</a>
-                |
-              <a href="https://www.youtube.com/watch?v=p_zknyfV9fY">Talk</a>
-                |
-              <a href="https://shibhansh.github.io/data/plasticity.pdf">Slides</a>
-              <p></p>
-              <p>
-                  Provide the first direct demonstration of the loss of plasticity faced by deep learning methods in continual learning problems.
-              </p>
-              <p>
-                  We propose a new algorithm, <em>continual backpropagation</em>, that fully maintains plasticity.
-                  Continual backpropagation re-initializes a small fraction of less-used units and performs a gradient descent step at each update.
-              </p>
-
             </td>
           </tr>
 
