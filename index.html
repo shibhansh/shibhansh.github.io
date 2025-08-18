@@ -21,7 +21,7 @@
                 <name>Shibhansh Dohare</name>
               </p>
               <p>
-                I am a final year Ph.D. student at the University of Alberta,
+                I am a Ph.D. candidate at the University of Alberta,
                 advised by <a href="http://incompleteideas.net/">Dr. Richard Sutton</a> and <a href="https://armahmood.github.io/">Dr. Rupam Mahmood</a>.
                 I completed my B.Tech. at IIT Kanpur in Computer Science and Engineering.
                 My long-term research goal is to understand the workings of our minds.
@@ -37,9 +37,6 @@
                 My Ph.D. research has been published in <a href="https://www.nature.com/articles/s41586-024-07711-7">Nature</a> and featured in some popular media outlets,
                 such as <a href="https://www.newscientist.com/article/2444870-ai-models-cant-learn-as-they-go-along-like-humans-do/">New Scientist</a>.
                 If you prefer podcasts, I have also discussed my work on the <a href="https://www.nature.com/articles/d41586-024-02756-0">Nature Podcast</a> and AMII's <a href="https://open.spotify.com/episode/4GFXGRg9ZiNTZdTfDXKAdq?si=cPyVtlNPRpyDo1Vw-IowOA">Approximately Correct Podcast</a>.
-              </p>
-              <p>
-                <b>I am on the job market for Summer 2025</b>. Feel free to reach out if you think I’d be a good fit for your research position.
               </p>
               <p style="text-align:center">
                 <a href="mailto:dohare@ualberta.ca">Email</a> &nbsp/&nbsp
@@ -108,6 +105,51 @@
 
         <table style="width:120%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+                    <td style="padding:0px;width:25%;vertical-align:top">
+              <div class="one">
+                <img src='images/swr.png' width="213">
+              </div>
+              <script type="text/javascript">
+                function lop_start() {
+                  document.getElementById('lop_image').style.opacity = "1";
+                }
+
+                function lop_stop() {
+                  document.getElementById('lop_image').style.opacity = "0";
+                }
+                lop_stop()
+              </script>
+            </td>
+
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+                <papertitle> <a href="https://www.nature.com/articles/s41586-024-07711-7">Reinitializing Weights vs Units For Maintaining Plasticity in Neural Networks</a></papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.ca/citations?user=vD3XXGwAAAAJ&hl=en">J. Fernando Hernandez-Garcia</a>,
+                <strong>Shibhansh Dohare</strong>,
+              <a href="https://www.linkedin.com/in/jun-luo-1098a6126/?originalSubdomain=ca">Jun Luo</a>,
+              <a href="http://incompleteideas.net/">Richard S. Sutton</a>
+              <br>
+              <em>CoLLAs</em>, Oral Presentation, 2025
+              <br>
+              <a href="https://openreview.net/forum?id=2IfArQgwtn">Paper</a>
+          		|
+              <a href="https://github.com/JFernando4/collas_2025_swr_paper">Code</a>
+              <p></p>
+              <p>
+                  We propose a new algorithm, which we name <em>selective weight reinitialization</em>,
+                  for reinitializing the least useful weights in a network.
+              </p>
+              <p>
+                  We find that selective weight reinitialization is more effective at maintaining plasticity than
+                  reinitializing units (continual backpropagation) when the network includes layer normalization or attention layers.
+              </p>
+            </td>
+          </tr>
+
+
 <!--          <tr onmouseout="lop_stop()" onmouseover="lop_start()"  bgcolor="#ffffd0">-->
             <td style="padding:0px;width:25%;vertical-align:top">
               <div class="one">
@@ -125,6 +167,7 @@
               </script>
             </td>
 
+
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a>
                 <papertitle> <a href="https://www.nature.com/articles/s41586-024-07711-7">Loss of Plasticity in Deep Continual Learning</a></papertitle>
@@ -140,7 +183,7 @@
               <em>Nature</em> 2024
               <br>
               <a href="https://www.nature.com/articles/s41586-024-07711-7">Paper</a>
-		|
+          		|
               <a href="https://github.com/shibhansh/loss-of-plasticity">Code</a>
                 |
               <a href="https://www.youtube.com/watch?v=Zp_a9M309k4">Nature Podcast</a>
@@ -148,11 +191,11 @@
               <a href="https://www.nature.com/articles/d41586-024-02525-z">News</a>
               <p></p>
               <p>
-                  We provide first direct demonstrations of plasticity loss in deep continual learning.
+                  We provide direct demonstrations of plasticity loss in deep continual learning.
               </p>
               <p>
                   We propose a new algorithm, <em>continual backpropagation</em>, that fully maintains plasticity.
-                  Continual backpropagation re-initializes a small fraction of less-used units alongside gradient descent at each update.
+                  Continual backpropagation reinitializes a small fraction of less-used units alongside gradient descent at each update.
               </p>
             </td>
           </tr>
