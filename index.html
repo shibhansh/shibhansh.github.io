@@ -21,7 +21,8 @@
                 <name>Shibhansh Dohare</name>
               </p>
               <p>
-                I am a Ph.D. candidate at the University of Alberta,
+                I am an AI researcher working on real-world continual and reinforcement learning.
+                Previously, I completed a Ph.D. at the University of Alberta,
                 advised by <a href="http://incompleteideas.net/">Dr. Richard Sutton</a> and <a href="https://armahmood.github.io/">Dr. Rupam Mahmood</a>.
                 I completed my B.Tech. at IIT Kanpur in Computer Science and Engineering.
                 My long-term research goal is to understand the workings of our minds.
@@ -31,7 +32,7 @@
                 I think many applications require continual adaptation, and deep continual learning has big potential in the next 5 years.
                 See a list of possible applications <a href="data/apps_cl.pdf">here</a>.
               <p>
-                During my Ph.D., I have contributed to exposing a fundamental problem with deep learning systems,
+                During my Ph.D., I contributed to exposing a fundamental problem with deep learning systems,
                 where these systems can lose the ability to learn new things.
                 I also developed the continual backpropagation algorithm to overcome this problem.
                 My Ph.D. research has been published in <a href="https://www.nature.com/articles/s41586-024-07711-7">Nature</a> and featured in some popular media outlets,
@@ -105,9 +106,10 @@
 
         <table style="width:120%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-                    <td style="padding:0px;width:25%;vertical-align:top">
+          <tr>
+            <td style="padding:0px;width:25%;vertical-align:top">
               <div class="one">
-                <img src='images/swr.png' width="213">
+                <img src='images/cbp.svg' width="213">
               </div>
               <script type="text/javascript">
                 function lop_start() {
@@ -120,8 +122,42 @@
                 lop_stop()
               </script>
             </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <a>
+                <papertitle> <a href='data/Dohare_Shibhansh_202601_PhD.pdf'>Learning Forever using Artificial Neural Networks</a></papertitle>
+              </a>
+              <br>
+                <strong>Shibhansh Dohare</strong>
+              <br>
+              PhD Thesis, University of Alberta, 2025
+              <br>
+              <p>
+                  My thesis brings together my work on loss of plasticity, continual backpropagation, and policy collapse.
+              </p>
+              <p>
+                  It provides a deeper understanding and evaluation of continual backpropagation than prior papers.
+                  There is also a new chapter on formalisms for loss of plasticity.
+                  Additionally, it also contains extensive discussion of related work in other fields as well as of prior work.
+              </p>
+            </td>
+          </tr>
 
+          <tr>
+            <td style="padding:10px;width:25%;vertical-align:middle;">
+              <div class="one">
+                <img src='images/swr.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function lop_start() {
+                  document.getElementById('lop_image').style.opacity = "1";
+                }
 
+                function lop_stop() {
+                  document.getElementById('lop_image').style.opacity = "0";
+                }
+                lop_stop()
+              </script>
+            </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a>
                 <papertitle> <a href="https://lifelong-ml.cc/Conferences/2025/acceptedpapersandvideos/conf-2025-17">Reinitializing Weights vs Units For Maintaining Plasticity in Neural Networks</a></papertitle>
@@ -139,10 +175,13 @@
               <a href="https://github.com/JFernando4/collas_2025_swr_paper">Code</a>
               <p></p>
               <p>
-                  We propose a new algorithm, which we name <em>selective weight reinitialization</em>,
+                  This paper builds on our Nature paper. We propose a new algorithm, which we name <em>selective weight reinitialization</em>,
                   for reinitializing the least useful weights in a network.
               </p>
-              <p>
+                <p>
+
+                </p>
+                <p>
                   We find that selective weight reinitialization is more effective at maintaining plasticity than
                   reinitializing units (continual backpropagation) when the network includes layer normalization or attention layers.
               </p>
@@ -150,10 +189,10 @@
           </tr>
 
 
-<!--          <tr onmouseout="lop_stop()" onmouseover="lop_start()"  bgcolor="#ffffd0">-->
-            <td style="padding:0px;width:25%;vertical-align:top">
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/lop.png' width="213">
+                <img src='images/lop.png' width="170">
               </div>
               <script type="text/javascript">
                 function lop_start() {
@@ -166,8 +205,6 @@
                 lop_stop()
               </script>
             </td>
-
-
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a>
                 <papertitle> <a href="https://www.nature.com/articles/s41586-024-07711-7">Loss of Plasticity in Deep Continual Learning</a></papertitle>
@@ -201,9 +238,9 @@
           </tr>
 
           <tr onmouseout="pc_stop()" onmouseover="pc_start()">
-            <td style="padding:20px;width:25%;vertical-align:bottom">
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/pc.png' width="200">
+                <img src='images/pc.png' width="170">
               </div>
               <script type="text/javascript">
                 function pc_start() {
@@ -236,11 +273,9 @@ We show that popular deep RL algorithms, like PPO, do not scale with experience.
           </tr>
 
           <tr onmouseout="gamma_stop()" onmouseover="gamma_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:30px;width:25%;vertical-align:bottom">
               <div class="one">
-                <div class="two" id='anf_image'>
-                  <img src='images/noisy_env.png' width="200"></div>
-                <img src='images/noisy_env.png' width="200">
+                <img src='images/noisy_env.png' width="170">
               </div>
               <script type="text/javascript">
                 function gamma_start() {
@@ -296,6 +331,7 @@ We show that popular deep RL algorithms, like PPO, do not scale with experience.
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
                 <papertitle>Gamma-Nets: Generalizing Value Estimation over Timescale</papertitle>
               </a>
               <br>
@@ -334,6 +370,7 @@ We show that popular deep RL algorithms, like PPO, do not scale with experience.
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
                 <papertitle>Unsupervised Semantic Abstractive Summarization</papertitle>
               </a>
               <br>
